@@ -1,4 +1,4 @@
-import { doubleNumbers, stringItUp } from './array-map';
+import { doubleNumbers, stringItUp, capitalizeNames } from './array-map';
 
 test('doubles numbers', () => {
   const input = [2, 5, 100]; // arrange
@@ -10,4 +10,10 @@ test('strings it up', () => {
   const input = [2, 5, 100];
   const output = stringItUp(input);
   expect(output).toEqual(['2', '5', '100']);
+});
+
+test('capitalizes the names', () => {
+  const input = ['john', 'JACOB', 'jinGleHeimer', 'schmidt'];
+  const output = capitalizeNames(input);
+  expect(output).toEqual(['John', 'Jacob', 'Jingleheimer', 'Schmidt']);
 });
