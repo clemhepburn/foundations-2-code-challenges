@@ -13,3 +13,7 @@ export function capitalizeNames(arr){
 export function namesOnly(arr){
   return arr.map(x => x.name);
 }
+
+export function makeStrings(arr){
+  return arr.map(x => `${x.name} ${x.age >= 18 ? 'can go to The Matrix' : 'is under age!!'}`);
+}
