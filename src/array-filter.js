@@ -7,7 +7,7 @@ export function evensOnly(arr) {
 }
 
 export function fiveCharactersOrFewerOnly(arr){
-  
+  return arr.filter(n => n.length <= 5);
 }
 
 export function peopleWhoBelongToTheIlluminati(arr){
