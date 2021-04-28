@@ -15,5 +15,5 @@ export function alphabetical(arr){
 }
 
 export function byAge(arr){
-  return arr.sort();
+  return arr.sort((a, b) => a.age - b.age);
 }
