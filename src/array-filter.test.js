@@ -15,7 +15,7 @@ test('evens only', () => {
 test('five characters or fewer only', () => {
   const input = ['dog', 'wolf', 'by', 'family', 'eaten', 'camping']; // arrange
   const output = fiveCharactersOrFewerOnly(input); // act
-  expect(output).toEqual(['by', 'dog', 'wolf', 'eaten']); // assert
+  expect(output).toEqual(expect.arrayContaining(['by', 'dog', 'wolf', 'eaten'])); // assert
 });
 
 test('people who belong to the illuminati', () => {

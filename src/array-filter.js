@@ -11,7 +11,7 @@ export function fiveCharactersOrFewerOnly(arr){
 }
 
 export function peopleWhoBelongToTheIlluminati(arr){
-  
+  return arr.filter(n => n.member);
 }
 
 export function ofAge(arr){
