@@ -3,7 +3,7 @@ export function leastToGreatest(arr){
 }
 
 export function greatestToLeast(arr){
-  return arr.sort();
+  return arr.sort((a, b) => b - a);
 }
 
 export function lengthSort(arr){
