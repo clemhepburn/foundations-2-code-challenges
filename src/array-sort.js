@@ -1,5 +1,5 @@
 export function leastToGreatest(arr){
-  return arr.sort();
+  return arr.sort((a, b) => a - b);
 }
 
 export function greatestToLeast(arr){
