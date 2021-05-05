@@ -1,4 +1,4 @@
-import { getHouses } from './object-keys-entries';
+import { getHouses, updateNumbers } from './object-keys-entries';
 test('it gets the names of the houses', () => {
   const characters = [
     {
@@ -46,4 +46,12 @@ test('it gets the names of the houses', () => {
   ]; //arrange
   const output = getHouses(characters); //act
   expect(output).toEqual(expect.arrayContaining(['Greyjoy', 'Snow', 'Arryn', 'Tyrell', 'Lannister', 'Targaryen', 'Stark'])); //assert
+});
+
+
+test('returns transformed key value pairs', () => {
+  const objects = 
+  { 'Grace Hopper': '222-303-5938', 'Ada Lovelace': '222-349-9842', 'Alan Turing': '222-853-5933' }; //arrange
+  const output = updateNumbers(objects); //act
+  expect(output).toEqual(['Grace Hopper: 222-303-5938', 'Ada Lovelace: 222-349-9842', 'Alan Turing: 222-853-5933']); //assert
 });
