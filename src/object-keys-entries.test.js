@@ -104,3 +104,5 @@ test('returns total number of characters in array', () => {
   const output = houseSize(characters); //act
   expect(output).toEqual(26); //assert
 });
+
+

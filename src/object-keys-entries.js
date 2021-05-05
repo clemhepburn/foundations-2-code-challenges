@@ -20,3 +20,4 @@ export function houseSize(arr) {
   }
   return newArr.length;
 }
+
